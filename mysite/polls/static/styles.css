@@ -1,0 +1,15 @@
+h1 {
+    color: blueviolet;
+    font-weight: 600;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 18px;
+    color: tomato;
+}
+
+ul {
+    list-style: none;
+}
+

@@ -8,10 +8,12 @@
     <ul>
       {% for note in notes %}
       <li>
-        <h2>{{ note.title }}</h2>
+        <h2><a href="{% url 'note_detail' note.id %}">{{ note.title }}</a></h2>
         <p>{{ note.text }}</p>
         <p>Category: {{ note.category }}</p>
         <p>Reminder: {{ note.reminder }}</p>
+        <a href="{% url 'edit_note' note.id %}">Edit</a>
+        <a href="{% url 'delete_note' note.id %}">Delete</a>
       </li>
       {% endfor %}
     </ul>

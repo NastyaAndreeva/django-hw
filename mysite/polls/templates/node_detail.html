@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Note Detail</title>
+  </head>
+  <body>
+    <h1>Note Detail</h1>
+    <h2>{{ note.title }}</h2>
+    <p>{{ note.text }}</p>
+    <p>Category: {{ note.category }}</p>
+    <p>Reminder: {{ note.reminder }}</p>
+    <a href="{% url 'edit_note' note.id %}">Edit</a>
+    <a href="{% url 'delete_note' note.id %}">Delete</a>
+  </body>
+</html>
